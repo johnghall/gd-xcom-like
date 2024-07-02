@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://csmonbpjpqhfg"]
+
+[ext_resource type="Script" path="res://map.gd" id="1_mr5l1"]
+[ext_resource type="PackedScene" uid="uid://0fa1be405lsj" path="res://grid_square/grid_square.tscn" id="2_7wglp"]
+[ext_resource type="PackedScene" uid="uid://dxuvllqpkxxg3" path="res://character/character.tscn" id="3_knkv1"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_mr5l1")
+GRID_SQUARE = ExtResource("2_7wglp")
+GRID_SIZE = Vector2(19, 10)
+CHARACTER = ExtResource("3_knkv1")

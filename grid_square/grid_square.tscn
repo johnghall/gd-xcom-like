@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://0fa1be405lsj"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_qdhw4"]
+
+[node name="grid_square" type="Node2D"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+metadata/_edit_group_ = true
+
+[node name="Border" type="Sprite2D" parent="."]
+position = Vector2(50, 50)
+scale = Vector2(100, 100)
+texture = SubResource("CanvasTexture_qdhw4")
+
+[node name="Inside" type="Sprite2D" parent="Border"]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.96, 0.96)
+texture = SubResource("CanvasTexture_qdhw4")
+
+[node name="Label" type="Label" parent="."]
+z_index = 2
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 60.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 16
+text = "1, 2
+"
