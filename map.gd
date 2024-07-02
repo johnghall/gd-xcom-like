@@ -42,7 +42,6 @@ func _instantiate_grid():
 
 
 func _instantiate_player():
-	print(CHARACTER)
 	var new_character = CHARACTER.instantiate()
 	var start_square = _get_grid_square_by_coordinate(Vector2(0, 0))
 	new_character.position = start_square.position
