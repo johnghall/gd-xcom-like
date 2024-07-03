@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dxuvllqpkxxg3" path="res://character/character.tscn" id="3_knkv1"]
 
 [node name="Map" type="Node2D"]
+position = Vector2(1, 1)
 script = ExtResource("1_mr5l1")
 GRID_SQUARE = ExtResource("2_7wglp")
 GRID_SIZE = Vector2(19, 10)
