@@ -1,21 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://0fa1be405lsj"]
+[gd_scene load_steps=3 format=3 uid="uid://0fa1be405lsj"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_qdhw4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwqbh"]
+size = Vector2(96, 96)
 
 [node name="grid_square" type="Node2D"]
 position = Vector2(2.08165e-12, 2.08165e-12)
 metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="Border" type="Sprite2D" parent="."]
 modulate = Color(0.366595, 0.366595, 0.366595, 1)
 position = Vector2(50, 50)
 scale = Vector2(100, 100)
 texture = SubResource("CanvasTexture_qdhw4")
+metadata/_edit_lock_ = true
 
 [node name="Inside" type="Sprite2D" parent="Border"]
 modulate = Color(0, 0, 0, 1)
 scale = Vector2(0.96, 0.96)
 texture = SubResource("CanvasTexture_qdhw4")
+metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="."]
 z_index = 2
@@ -26,3 +32,13 @@ offset_bottom = 60.0
 theme_override_font_sizes/font_size = 16
 text = "1, 2
 "
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(50, 50)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wwqbh")
+metadata/_edit_lock_ = true

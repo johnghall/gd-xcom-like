@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var game_coordinate: Vector2
+@export var is_moving: bool
 
 
 func move_character(coordinate_pxl: Vector2, coordinate_game: Vector2, duration: float) -> void:
